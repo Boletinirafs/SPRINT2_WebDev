@@ -22,6 +22,31 @@ botaoCadastro.addEventListener('click',()=>{
     cadastroForm.classList.toggle('hide')
 })
 
+//Aceita ou nao as credenciais
+const confirmarL = document.getElementById('confirmarL')
+confirmarL.addEventListener('click',()=>{
+    const usuario = document.getElementById('usuarioL')
+    const senha = document.getElementById('senhaL')
+    let encontrou = false
+    for(let i = 0 ; i<localStorage.length;i++){
+        console.log(localStorage.key(i))
+        if (usuario.value == localStorage.key(i)){
+            const user = JSON.parse(localStorage.getItem(localStorage.key(i)))
+            if (senha.value == user.passW){
+                alert(`Bem vindo(a) ${user.user}`)
+                encontrou = true
+                return
+            }else{
+                alert('Senha incorreta')
+                return
+            }}}
+    if (!encontrou){
+        alert('Usuário não encontrado')
+    }
+    usuario.value=''
+    senha.value = ''
+})
+
 //Cadastra o usuario e senha
 const confirmarC = document.getElementById('confirmarC')
 confirmarC.addEventListener('click',()=>{
