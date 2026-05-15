@@ -70,3 +70,41 @@ confirmarC.addEventListener('click',()=>{
     usuario.value=''
     senha.value = ''
 })
+
+let imgCounter = 0
+let presentChoice = 0
+const present1 =[
+    '.images/.presentation/p1/1-1.png',
+    '.images/.presentation/p1/1-2.png',
+    '.images/.presentation/p1/1-3.png',
+    '.images/.presentation/p1/1-4.png',
+    '.images/.presentation/p1/1-5.png',
+    '.images/.presentation/p1/1-6.png',
+    '.images/.presentation/p1/1-7.png',
+    '.images/.presentation/p1/1-8.png',
+    '.images/.presentation/p1/1-9.png'
+]
+const present2 =[
+    '.images/.presentation/p2/p2.svg',
+]
+
+const botaoSlides1 = document.querySelector('.visualize1')
+botaoSlides1.addEventListener('click',()=>{
+    if(presentChoice == 0){
+        fechar(presentChoice,1,'.carousel')
+    }
+    imgCounter = 0
+    const slide = document.querySelector('.carousel img')
+    slide.src = present1[imgCounter]
+    presentChoice = 0
+})
+const botaoSlides2 = document.querySelector('.visualize2')
+botaoSlides2.addEventListener('click',()=>{
+    if (presentChoice == 1){
+        fechar(presentChoice,0,'.carousel')
+    }
+    imgCounter = 0
+    const slide = document.querySelector('.carousel img')
+    slide.src = present2[imgCounter]
+    presentChoice = 1
+}) 
