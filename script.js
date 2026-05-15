@@ -5,3 +5,12 @@ botaoLogin.addEventListener('click',()=>{
     //alterna os valores internos
     loginForm.classList.toggle('hide')
 })
+
+//funcao para abrir e fechar o cadastro
+const botaoCadastro = document.querySelector('.cadastro')
+botaoCadastro.addEventListener('click',()=>{
+    trocar('.loginForm')
+    const cadastroForm = document.querySelector('.cadastroForm')
+    //alterna os valores internos
+    cadastroForm.classList.toggle('hide')
+})
