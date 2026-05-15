@@ -121,3 +121,17 @@ botProx.addEventListener('click',()=>{
         }
     }
 })
+
+const botUlt = document.getElementById('ultima')
+botUlt.addEventListener('click',()=>{
+    if(presentChoice === 0){
+        const imagem = document.querySelector('.carousel img')
+        if(imgCounter==0){
+            imgCounter=present1.length-1
+            imagem.src = present1[imgCounter]
+        }else{
+            imgCounter--
+            imagem.src = present1[imgCounter]
+        }
+    }
+})
