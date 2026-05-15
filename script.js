@@ -108,3 +108,16 @@ botaoSlides2.addEventListener('click',()=>{
     slide.src = present2[imgCounter]
     presentChoice = 1
 }) 
+const botProx = document.getElementById('proxima')
+botProx.addEventListener('click',()=>{
+    if(presentChoice === 0){
+        const imagem = document.querySelector('.carousel img')
+        if(imgCounter<(present1.length-1)){
+            imgCounter++
+            imagem.src = present1[imgCounter]
+        }else{
+            imgCounter = 0
+            imagem.src = present1[imgCounter]
+        }
+    }
+})
