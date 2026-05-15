@@ -21,3 +21,27 @@ botaoCadastro.addEventListener('click',()=>{
     //alterna os valores internos
     cadastroForm.classList.toggle('hide')
 })
+
+//Cadastra o usuario e senha
+const confirmarC = document.getElementById('confirmarC')
+confirmarC.addEventListener('click',()=>{
+    //seleciona o id dos campos
+    const usuario = document.getElementById('usuarioC')
+    const senha = document.getElementById('senhaC')
+    //verifica se há usuario existente
+    for(let i = 0 ; i<localStorage.length;i++){
+        console.log(localStorage.key(i))
+        if (usuario.value == localStorage.key(i)){
+        alert('Usuário já existe')
+        return
+        }
+    }
+    //caso não exista, cria novo usuário
+    const novoUsuario = {
+        user :usuario.value,
+        passW :senha.value
+    }
+    localStorage.setItem(usuario.value.toString(),JSON.stringify(novoUsuario))
+    usuario.value=''
+    senha.value = ''
+})
