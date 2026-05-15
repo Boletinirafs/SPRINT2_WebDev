@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VisuAll</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+     <nav id="navbar">
+        <div class="logo-complete">
+            <img src=".images/logo.png" class="logo">
+            <span class="logo-text">VisuAll</span>
+        </div>
+        <div class="links">
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#acessibilidade">Acessibilidade</a>
+            <a href="#prototipo">Protótipo</a>
+            <a href="#equipe">Equipe</a>
+            <a href="#contato">Contato</a>
+        </div>
+        <div class="nav-botoes">
+            <button class="login">Login</button>
+            <button class="cadastro">Cadastre-se</button>
+            <div class="loginForm hide">
+                <input id="usuarioL" placeholder="Digite seu usuario">
+                <input id="senhaL" placeholder="Digite sua senha">
+                <button id="confirmarL">Confirmar</button>
+            </div>
+            <div class="cadastroForm hide">
+                <input id="usuarioC" placeholder="Cadastre seu usuario">
+                <input id="senhaC" placeholder="Cadastre sua senha">
+                <button id="confirmarC">Confirmar</button>
+            </div>
+        </div>
+     </nav>
+     <main>
+        <!-- INICIO -->
+        <section id="inicio" class="secao">
+            <div class="grid"></div> 
+            <p class="tag">Challenge J0VI · FIAP 2026</p>
+            <h1 class="titulo">VisuAll</h1>
+            <p class="titulo-sub">TECNOLOGIA QUE INCLUI</p>
+            <p class="frase">Quando a tecnologia abraça a inclusão, o mundo inteiro vê com novos olhos.</p>
+            <a href="#sobre" class="conheca">Conheça o Projeto</a>
+        </section>
+        <!-- SOBRE -->
+        <section id="sobre" class="secao">
+            <h2 class="titulo2">Sobre o Projeto</h2>
+            <p class="texto">O VisuAll é um projeto desenvolvido para o Challenge da FIAP em parceria com a marca JOVI, com o objetivo de aprimorar algum recurso das camêras dos celulares. Nossa solução é voltada para pessoas com deficiência visual e auditiva, oferecendo tecnologia acessível, moderna e eficiente.</p>
+            <p class="texto">Acreditamos que a tecnologia deve ser para todos — sem exceção. O VisuAll nasce com essa missão: quebrar barreiras e conectar pessoas ao mundo digital.</p>
+            <div class="topics">
+                <div class="topic">
+                    <span class="icone"></span>
+                    <h3>Uma IA, Dois Modos de Leitura</h3>
+                    <p>MLP estático para letras paradas + MLP dinâmico para letras com movimento – processamento 100% local, sem internet, sem envio de imagens à nuvem.</p>
+                </div>
+                <div class="topic">
+                    <h3>Interação Totalmente Acessível</h3>
+                    <p>Mão aberta para apagar, histórico de frases navegável, cantos dourados indicando modo ativo — acessibilidade até nos micro-detalhes.</p>
+                </div>
+                <div class="topic">
+                    <h3>Interface Familiar, Funcionalidade Exclusiva</h3>
+                    <p>Câmera nativa da JOVI com modo de acessibilidade ativável por um ícone — sem apps externos, sem configuração complexa.</p>
+                </div>
+            </div>
+        </section>
+        <!-- ACESSIBILIDADE -->
+         <section id="acessibilidade" class="secao">
+            <div class="square">
+                <h2 class="titulo2">Acessibilidade para Todos</h2>
+                <p>O VisuAll foi criado pensando nas necessidades reais de pessoas com deficiência visual e auditiva. Nossas funcionalidades incluem:</p>
+                <div class="topics">
+                    <div class="topic">
+                        <h3>Para Pessoas Cegas</h3>
+                        <ul>
+                            <li>Descrição de imagens por IA</li>
+                            <li>Leitura de textos em voz alta</li>
+                            <li>Identificação de objetos</li>
+                        </ul>
+                    </div>
+                    <div class="topic">
+                        <h3>Para Pessoas Surdas</h3>
+                        <ul>
+                            <li>Transcrição de áudio em tempo real</li>
+                            <li>Tradução de Libras em Tempo Real</li>
+                            <li>Legendas automáticas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <!-- PROTOTIPO -->
+        <section id="prototipo" class="secao">
+            <h2 class="titulo2">Protótipos</h2>
+                <p class="texto">Conheça todas as versões de VisuAll.</p>
+                <h2 class="trad">Tradução de Libras em tempo real</h2>
+                <div class="versions">
+                    <div class="version">
+                        <h3>Versão 1.0</h3>
+                        <p>Versão inicial com interpretação em tempo real do alfabeto em Libras</p>
+                        <button class="visualize1">Visualizar Slides para Banca 1</button>
+                    </div>
+                    <div class="version">
+                        <h3>Versão 2.0</h3>
+                        <p>Versão atual que interpreta sinais de libras gerais, utilizando movimentos manuais e faciais.</p>
+                        <button class="visualize2">Visualizar Slides para Banca 2</button>
+                    </div>
+                </div>
+                <div class="carousel hide">
+                    <img src=".images/.presentation/p1/1-1.png" alt="" srcset="">
+                    <div class="botoes">
+                        <button id="ultima"><</button>
+                        <button id="proxima">></button>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!-- EQUIPE -->
+        <section id="equipe" class ="secao">
+            <h2 class="titulo2">Integrantes da Equipe</h2>
+            <p class="texto">Conheça os integrantes do Grupo VisuAll!</p>
+            <div class="integrantes">
+                <div class="integrante">
+                    <img src=".images/.team/joão.jpeg" alt="" class="foto">
+                    <h3>João Victor Pereira Gimenes</h3>
+                </div>
+                <div class="integrante">
+                    <img src=".images/.team/juan.jpeg" alt="" class="foto">
+                    <h3>Juan Duarte Moura</h3>
+                </div>
+                <div class="integrante">
+                    <img src=".images/.team/julio.jpeg" alt="" class="foto">
+                    <h3>Julio Cesar Silva Cocco</h3>
+                </div>
+                <div class="integrante">
+                    <img src=".images/.team/rafael.jpeg" alt="" class="foto">
+                    <h3>Rafael Boletini de Oliveira</h3>
+                </div>
+                <div class="integrante">
+                    <img src=".images/.team/victor.png" alt="" class="foto">
+                    <h3>Victor Rossi Sales Zanandré</h3>
+                </div>
+            </div>
+        </section>
+        <section id="contato" class="secao">
+            <h2 class="titulo2">Contato</h2>
+            <p class="texto">Quer saber mais sobre o VisuAll? Fale com a gente!</p>
+            <form class="contact">
+                <div class="cont">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" placeholder="Seu nome">
+                </div>
+                <div class="cont">
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" placeholder="seu@email.com">
+                </div>
+                <div class="cont-ms">
+                    <label for="mensagem">Mensagem</label>
+                    <input id="mensagem" rows="4" placeholder="Sua mensagem..."></input>
+                </div>
+                <button type="submit" class="confirma">Enviar</button>
+            </form>
+        </section>
+     </main>
+     <!-- CARROSSEL DE SLIDES 1 -->
+     <div id="modal1" style="display: none;">
+        <div class="sobreposicaoModal" onclick="fecharCarrossel1()"></div>
+        <div class="conteudoModal">
+            <button class="fechar" onclick="fecharCarrossel1()">✕</button>
+            <img id="imgAtual1" src="">
+            <button onclick="anterior1()">⭠</button>
+            <button onclick="proximo1()">⭢</button>
+        </div>
+     </div>
+     <!-- CARROSSEL DE SLIDES 2 -->
+     <div id="modal2" style="display: none;">
+        <div class="sobreposicaoModal" onclick="fecharCarrossel2()"></div>
+        <div class="conteudoModal">
+            <button class="fechar" onclick="fecharCarrossel2()">✕</button>
+            <img id="imgAtual2" src="">
+            <button onclick="anterior2()">⭠</button>
+            <button onclick="proximo2()">⭢</button>
+        </div>
+     </div>
+     <script src="script.js"></script>
+</body>
+</html>
