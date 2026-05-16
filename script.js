@@ -135,3 +135,12 @@ botUlt.addEventListener('click',()=>{
         }
     }
 })
+
+const fechar= (x,y,z) =>{
+    const fecha = document.querySelector(z)
+    if (fecha.classList.contains('hide')){
+        fecha.classList.toggle('hide')
+    }else{
+        fecha.classList.toggle('hide')
+    }
+}
